@@ -66,6 +66,7 @@ const App = () => {
         .createPost(postText, postImg)
         .send({ from: user.get("ethAddress") });
       console.log("post created");
+      window.location.reload();
     } catch (error) {
       console.log(error);
     }

@@ -25,10 +25,11 @@ function Rightbar() {
         }
         if (allUsers.length > 10) break;
       }
+      console.log(allUsers)
       setUsers(() => allUsers);
     };
     fetchData();
-  }, [users]);
+  }, []);
 
   //hide option when clicked outside option field
   useEffect(() => {
@@ -48,18 +49,23 @@ function Rightbar() {
   };
 
   return (
-    <div className="rightbarContent">
+    <div className="rightbarContent" 
+    >
+      <div className="user-search" ref={wrapperRef}>
+
+      <div
+    onClick={() => setDisplay(!display)}>
+
       <Input
-        ref={wrapperRef}
         label="Search User"
         prefixIcon="search"
         labelBgColor="#141d26"
-        onClick={() => setDisplay(!display)}
         value={search}
         onChange={(event) => setSearch(event.target.value)}
       ></Input>
+      </div>
       {display && (
-        <div className="autoContainer" ref={wrapperRef}>
+        <div className="autoContainer">
           {users
             .filter((user) => {
               return (
@@ -96,6 +102,7 @@ function Rightbar() {
         </div>
       )}
 
+      </div>
       <div className="trends">
         People you may know
         {users ? (

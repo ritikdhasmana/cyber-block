@@ -101,7 +101,7 @@ function Visitprofile(props) {
             })
             .reverse()
         ) : (
-          <div>No post.</div>
+          <div></div>
         )}
       </>
     </>

@@ -90,7 +90,7 @@ const Feeds = (props) => {
             })
             .reverse()
         ) : (
-          <div>No post.</div>
+          <div></div>
         )
       ) : props.allPosts && users.length ? (
         props.allPosts

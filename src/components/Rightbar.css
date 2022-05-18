@@ -1,0 +1,45 @@
+.rightbarContent {
+  padding: 25px;
+  width: 80%;
+}
+
+.trends {
+  background-color: #222b34;
+  border-radius: 25px;
+  min-height: calc(90vh - 200px);
+  max-width: 290px;
+  margin-top: 40px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.rightbar-profile {
+  color: white;
+  padding: 30px;
+  padding-left: 5px;
+}
+.autoContainer {
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 7px;
+  background-color: white;
+  margin-top: 2px;
+}
+.option {
+  align-items: center;
+  display: flex;
+  width: 300px;
+  margin-inline: 5px;
+  padding: 5px;
+  border-bottom: 1px solid rgb(186, 186, 186);
+}
+.rightbarwho {
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 3px;
+}

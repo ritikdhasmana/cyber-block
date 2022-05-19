@@ -50,3 +50,7 @@ Tipping a post  is also on chain.
 
 User profile editing and data related to user profile (other than the posts) are kept off chain to make it costless and easy to use. This profile data is also stored on moralis as a moralis object. 
 
+
+### What's next 
+- Follow/Unfollow feature
+- Like Post feature
